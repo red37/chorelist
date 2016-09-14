@@ -1,0 +1,9 @@
+{% if chores %}
+	<ul>
+		{% for chore in chores %}
+			<li><a href="/chores/{{chorelist.id}}/chores/{{chore.id}}">{{chore}}</a></li>
+		{% endfor %}
+	<ul>
+{% else %}
+	<p> No chores are currently associated with Chorelist #{{%chorelist.id}}</p>
+{% endif %}
